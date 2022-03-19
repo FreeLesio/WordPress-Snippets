@@ -1,0 +1,36 @@
+--------------- HIDE SOMETHING (CSS) ---------------
+
+selector {
+	display: none;
+}
+
+--------------- CHANGE SELECTION COLOR (CSS) ---------------
+
+::selection {
+	background: #F03C14;
+	color: #FFFFFF;
+}
+
+--------------- CHANGE SCROLLBAR (CSS) ---------------
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #F03C14;
+}
+
+--------------- STUNNY BLURRY HEADER (CSS) ---------------
+
+header {
+	background: rgba(255, 255, 255,0.8);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+--------------- PAGE SELECTOR (CSS) ---------------
+
+.page-id-555 {
+	display: none;
+}
