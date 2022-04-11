@@ -94,3 +94,12 @@ function wc_disable_additional_information( $tabs ) {
 	unset( $tabs['additional_information'] );
 	return $tabs;
 }
+
+--------------- MOVE PAYMENT FORM (CHILD THEME) (PHP) ---------------
+
+add_action( 'after_setup_theme', 'ab_checkout' );
+
+function ab_checkout() {
+	remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+	add_action( 'woocommerce_after_order_notes', 'woocommerce_checkout_payment', 20 );
+}
