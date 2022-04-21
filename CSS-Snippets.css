@@ -34,3 +34,9 @@ header {
 .page-id-123 {
 	display: none;
 }
+
+--------------- HIDE ADMIN BAR (CSS) ---------------
+
+#wpadminbar {
+	display: none!important;
+}
